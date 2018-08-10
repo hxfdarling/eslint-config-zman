@@ -1,85 +1,45 @@
 module.exports = {
-  extends: ['eslint-config-airbnb'],
   env: {
     browser: true,
-    node: true,
-    mocha: true,
-    jest: true,
     es6: true,
+    jest: true,
+    mocha: true,
+    node: true,
   },
+  extends: ['eslint-config-airbnb'],
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 6,
     ecmaFeatures: {
-      jsx: true,
       experimentalObjectRestSpread: true,
+      jsx: true,
     },
+    ecmaVersion: 6,
   },
   plugins: ['react', 'babel'],
   rules: {
-    curly: [2, 'all'],
-    'import/extensions': {
-      svg: 'always',
-      js: 'never',
-      json: 'never',
-    },
-    'linebreak-style': 0,
-    'no-console': 0,
-    'no-unused-expressions': 0,
-    'arrow-parens': 0,
-    'function-paren-newline': 0,
-    'object-curly-newline': 0,
-    'space-before-function-paren': 0,
-    'no-sync': 1,
-    'react/no-did-mount-set-state': 0,
-    'react/forbid-prop-types': 0,
-    'jsx-a11y/no-static-element-interactions': 0,
-    'jsx-a11y/click-events-have-key-events': 0,
-    'jsx-a11y/no-noninteractive-element-to-interactive-role': 0,
-    'jsx-a11y/no-noninteractive-element-interactions': 0,
-    'jsx-a11y/mouse-events-have-key-events': 0,
-    'jsx-a11y/no-noninteractive-tabindex': 0,
     'array-callback-return': 0,
+    'arrow-body-style': 0,
+    'arrow-parens': 0,
+    'class-methods-use-this': 0,
     'comma-dangle': [
       'error',
       {
         arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
         exports: 'always-multiline',
         functions: 'never',
-      },
-    ],
-    'func-names': 0,
-    'arrow-body-style': 0,
-    'react/prop-types': 0,
-    'react/jsx-filename-extension': 0,
-    'import/no-unresolved': 0,
-    'no-param-reassign': 0,
-    'no-return-assign': 0,
-    'no-mixed-operators': [
-      'error',
-      {
-        groups: [['&', '|', '^', '~', '<<', '>>', '>>>'], ['&&', '||']],
-        allowSamePrecedence: true,
-      },
-    ],
-    'max-len': [
-      2,
-      {
-        code: 120,
+        imports: 'always-multiline',
+        objects: 'always-multiline',
       },
     ],
     'consistent-return': 0,
-    'class-methods-use-this': 0,
-    'no-plusplus': 0,
-    'no-underscore-dangle': 0,
-    'no-empty': [
-      'error',
-      {
-        allowEmptyCatch: true,
-      },
-    ],
+    curly: [2, 'all'],
+    'func-names': 0,
+    'function-paren-newline': 0,
+    'import/extensions': {
+      js: 'never',
+      json: 'never',
+      svg: 'always',
+    },
     'import/no-extraneous-dependencies': [
       0,
       {
@@ -87,6 +47,41 @@ module.exports = {
         peerDependencies: 0,
       },
     ],
+    'import/no-unresolved': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/mouse-events-have-key-events': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'jsx-a11y/no-noninteractive-element-to-interactive-role': 0,
+    'jsx-a11y/no-noninteractive-tabindex': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'linebreak-style': 0,
+    'max-len': [
+      2,
+      {
+        code: 120,
+      },
+    ],
+    'no-console': 0,
+    'no-empty': [
+      'error',
+      {
+        allowEmptyCatch: true,
+      },
+    ],
+    'no-mixed-operators': [
+      'error',
+      {
+        allowSamePrecedence: true,
+        groups: [['&', '|', '^', '~', '<<', '>>', '>>>'], ['&&', '||']],
+      },
+    ],
+    'no-param-reassign': 0,
+    'no-plusplus': 0,
+    'no-return-assign': 0,
+    'no-sync': 1,
+    'no-underscore-dangle': 0,
+    'no-unused-expressions': 0,
+    'object-curly-newline': 0,
     'prefer-const': [
       'error',
       {
@@ -96,18 +91,23 @@ module.exports = {
     'prefer-destructuring': [
       'error',
       {
-        VariableDeclarator: {
-          array: false,
-          object: true,
-        },
         AssignmentExpression: {
           array: false,
           object: false,
+        },
+        VariableDeclarator: {
+          array: false,
+          object: true,
         },
       },
       {
         enforceForRenamedProperties: false,
       },
     ],
+    'react/forbid-prop-types': 0,
+    'react/jsx-filename-extension': 0,
+    'react/no-did-mount-set-state': 0,
+    'react/prop-types': 0,
+    'space-before-function-paren': 0,
   },
 };
