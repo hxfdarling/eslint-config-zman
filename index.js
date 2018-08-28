@@ -6,6 +6,7 @@ module.exports = {
     mocha: true,
     node: true,
     worker: true,
+    serviceworker: true,
   },
   extends: ['eslint-config-airbnb'],
   parser: 'babel-eslint',
