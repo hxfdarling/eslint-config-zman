@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zman",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/hxfdarling/eslint-config-zman#readme",
   "scripts": {
-    "lint": "eslint index.js"
+    "lint": "eslint index.js",
+    "postinstall": "node ./scripts/post-install.js"
   }
 }

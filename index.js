@@ -5,6 +5,7 @@ module.exports = {
     jest: true,
     mocha: true,
     node: true,
+    worker: true,
   },
   extends: ['eslint-config-airbnb'],
   parser: 'babel-eslint',
