@@ -12,7 +12,8 @@
   "bugs": {
     "url": "https://github.com/hxfdarling/eslint-config-zman/issues"
   },
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
     "babel-eslint": "^8.2.6",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.0.0",
