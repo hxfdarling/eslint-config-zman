@@ -80,7 +80,6 @@ module.exports = {
     'no-param-reassign': 0,
     'no-plusplus': 0,
     'no-return-assign': 0,
-    'no-sync': 1,
     'no-underscore-dangle': 0,
     'no-unused-expressions': 0,
     'object-curly-newline': 0,
@@ -111,5 +110,8 @@ module.exports = {
     'react/no-did-mount-set-state': 0,
     'react/prop-types': 0,
     'space-before-function-paren': 0,
+    'import/no-dynamic-require': 0,
+    'global-require': 0,
+    'no-sync': 0,
   },
 };
