@@ -4,14 +4,14 @@
     "url": "https://github.com/hxfdarling/eslint-config-zman/issues"
   },
   "dependencies": {
-    "babel-eslint": "*",
-    "eslint": "*",
-    "eslint-config-airbnb": "*",
-    "eslint-plugin-babel": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-prettier": "*",
-    "eslint-plugin-react": "*"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1"
   },
   "description": "",
   "homepage": "https://github.com/hxfdarling/eslint-config-zman#readme",
@@ -24,7 +24,8 @@
   },
   "scripts": {
     "lint": "eslint --fix index.js",
-    "postinstall": "node ./scripts/post-install.js"
+    "postinstall": "node ./scripts/post-install.js",
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {
@@ -56,6 +57,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^1.1.2",
     "lint-staged": "^8.0.3",
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "standard-version": "^4.4.0"
   }
 }
