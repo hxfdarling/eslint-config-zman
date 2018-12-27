@@ -17,7 +17,7 @@ module.exports = {
     },
     ecmaVersion: 6,
   },
-  plugins: ['react', 'babel'],
+  plugins: ['react', 'babel', 'prettier'],
   rules: {
     'array-callback-return': 0,
     'arrow-body-style': 0,
