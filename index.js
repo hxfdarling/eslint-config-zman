@@ -3,7 +3,6 @@ module.exports = {
     browser: true,
     es6: true,
     jest: true,
-    mocha: true,
     node: true,
     worker: true,
     serviceworker: true,
@@ -17,7 +16,7 @@ module.exports = {
     },
     ecmaVersion: 6,
   },
-  plugins: ['react', 'babel'],
+  plugins: ['import', 'react', 'babel'],
   rules: {
     'array-callback-return': 0,
     'arrow-body-style': 0,
@@ -37,11 +36,6 @@ module.exports = {
     curly: [2, 'all'],
     'func-names': 0,
     'function-paren-newline': 0,
-    'import/extensions': {
-      js: 'never',
-      json: 'never',
-      svg: 'always',
-    },
     'import/no-extraneous-dependencies': [
       0,
       {
