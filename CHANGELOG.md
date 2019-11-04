@@ -1,6 +1,12 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.2.2](https://github.com/hxfdarling/eslint-config-zman/compare/v0.2.1...v0.2.2) (2019-11-04)
+
+### Bug Fixes
+
+- update deps ([b24029f](https://github.com/hxfdarling/eslint-config-zman/commit/b24029f33df261d26149118ad69e03f5b4c955e4))
 
 <a name="0.2.1"></a>
 
