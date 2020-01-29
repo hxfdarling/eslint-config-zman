@@ -16,7 +16,7 @@ module.exports = {
     },
     ecmaVersion: 6,
   },
-  plugins: ['import', 'react', 'babel'],
+  plugins: ['import', 'react', 'babel', 'react-hooks'],
   rules: {
     'array-callback-return': 0,
     'arrow-body-style': 0,
@@ -68,7 +68,10 @@ module.exports = {
       'error',
       {
         allowSamePrecedence: true,
-        groups: [['&', '|', '^', '~', '<<', '>>', '>>>'], ['&&', '||']],
+        groups: [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['&&', '||'],
+        ],
       },
     ],
     'no-param-reassign': 0,
